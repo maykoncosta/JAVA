@@ -1,0 +1,50 @@
+Estruturas de Repetição
+Fazer enquanto
+Quando queremos que um código execute pelo menos uma vez, e posteriormente continue a preparação somente se uma condição para verdadeira, meta o do-while .
+
+O programa abaixo recebe várias notas referente a um aluno, até que um número negativo seja recebido. Em seguida, calcula a média e exibe um resultado.
+
+Scanner scanner =  novo  Scanner ( Sistema . In);
+int notaAluno =  0 ;
+mídia dupla =  0 ;
+int contador =  0 ;
+faça {		  
+  notaAluno = scanner . nextInt ();      // recebe uma nota a partir do teclado 
+  if (notaAluno > = 0 ) {
+	  mídia + = notaAluno;
+	  contador ++ ;
+  }
+} enquanto (notaAluno > = 0 ); 				  // pára quando uma nota para negativa; 
+if (contador ! = 0 )
+	media / = contador;
+Sistema . para fora . println ( " Mídia: " + mídia);
+Enquanto
+A diferença do while para o do-while é que o while não executa o primeiro comando sem verificar a condição, enquanto o do-while o faz.
+
+O programa abaixo começa com a variável nota com valor -1, para poder entrar no laço de repetição do while . Em seguida, recebe várias notas referentes a um aluno, até que um número negativo seja obtido, calculando, por fim, a média e exibindo um resultado.
+
+Scanner scanner =  novo  Scanner ( Sistema . In);
+int notaAluno =  0 ;
+mídia dupla =  0 ;
+int contador =  0 ;
+while (notaAluno > = 0 ) {                   // pára quando uma nota para negativa 
+  notaAluno = scanner . nextInt ();      // recebe uma nota a partir do teclado 
+  if (notaAluno > = 0 ) {
+	  mídia + = notaAluno;
+	  contador ++ ;
+  }
+} 
+
+if (contador ! = 0 )
+	media / = contador;
+Sistema . para fora . println ( " Média: " + mídia);
+Para
+Ao Estrutura de repetição para , E USADA geralmente when se sabe a Quantidade de iterações.
+
+O programa abaixo exibe todos os números pares entre 0 e 100.
+
+Sistema . para fora . println ( " Pares entre 0 e 100 " );
+para ( int i =  0 ; i <=  100 ; i ++ ) {
+	   if (i % 2 == 0 )
+	     Sistema . para fora . imprimir (i + " , " );
+}
